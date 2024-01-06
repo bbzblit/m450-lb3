@@ -222,8 +222,10 @@ async function run() {
     console.log(`Running test on ${cap.os} ${cap.os_version} ${cap.browser} ${cap.browser_version}`);
     
     const browser = await puppeteer.connect({
-      browserWSEndpoint: `wss://cdp.browserstack.com/puppeteer?caps=${encodeURIComponent(JSON.stringify(cap))}`,  // The BrowserStack CDP endpoint gives you a `browser` instance based on the `caps` that you specified
-    });
+      browserWSEndpoint: `wss://cdp.browserstack.com/puppeteer?caps=${encodeURIComponent(JSON.stringify(cap))}`, 
+
+      defaultViewport: { width: 1100, height: 768}
+    },);
   
     await main(browser);
 
