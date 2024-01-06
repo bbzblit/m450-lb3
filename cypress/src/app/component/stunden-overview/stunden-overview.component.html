@@ -1,0 +1,15 @@
+<div id="overview-wrapper">
+    <div id="overview-title">
+        <h1>Stundenplan Query</h1>
+        <h2 id="period">Selected Period {{DATE}}</h2>
+    </div>
+    <div id="filter-values">
+        <div class="nonexist"></div>
+        <app-class-selector id="class-selector"></app-class-selector>
+        <div class="mobile-only" style="height: 2rem;"></div>
+        <app-daypicker id="daypicker"></app-daypicker>
+    </div>
+    <div id="stundenplan">
+        <app-timetable-root id="timetable"></app-timetable-root>
+    </div>
+</div>

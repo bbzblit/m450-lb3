@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://stundenplan.bbzbl-it.dev",
+    "debug": true,
+    "secure": true,
+    "changeOrigin": true
+  }
+}
