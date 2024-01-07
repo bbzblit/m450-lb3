@@ -33,6 +33,8 @@ def close_welcome_message(driver: webdriver.Chrome) -> None:
     )
     driver.find_element(By.CSS_SELECTOR, "#welcome-wrapper #close-action").click()
 
+    driver.implicitly_wait(1)    
+
     if len(driver.find_elements(By.ID, "welcome-wrapper")) == 0:
         driver.execute_script(
             'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"passed", "reason": "Welcome message closed successfully"}}'
@@ -67,6 +69,8 @@ def close_welcome_message_with_button(driver: webdriver.Chrome) -> None:
     )
 
     driver.find_element(By.CSS_SELECTOR, "#welcome-wrapper #action > button").click()
+
+    driver.implicitly_wait(1)
 
     if len(driver.find_elements(By.ID, "welcome-wrapper")) == 0:
         driver.execute_script(
