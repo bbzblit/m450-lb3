@@ -37,7 +37,7 @@ node test.spec.js > /dev/null
 
 echo "Finished Puppeteer tests..."
 
-echo "\n\n\n"
+echo -e "\n\n\n"
 
 echo "#####################"
 
