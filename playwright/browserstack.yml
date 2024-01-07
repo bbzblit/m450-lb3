@@ -1,4 +1,4 @@
-projectName: BrowserStack Samples 
+projectName: Stundenplan Playwright 
 # Set `buildName` as the name of the job / testsuite being run
 buildName: browserstack build 
 # `buildIdentifier` is a unique id to differentiate every execution that gets appended to
