@@ -5,6 +5,10 @@
 Testroboter haben die Aufgabe die Qualität von Software zu überprüfen. Testroboter folgen einer vorgegebenen Liste von Tests. Dabei führen sie bestimmte Aktionen aus (z.B klicken auf einen Button) und überprüfen anschliessend das Ergebnis. 
 Dabei sind Testroboter präzizer und schneller als wenn die Tests von Hand ausgeführt werden.
 
+# Programmcode
+Als Grundlage haben wir uns dazu entschieden, [Stundenplan](https://stundenplan.bbzbl-it.dev/?period=now) zu verwenden. Dabei handelt es sich um eine bessere offizielle Implementierung vom [BBZBL Stundenplan](https://www.bbzbl.ch/stundenplan/)
+
+
 In diesem Projekt haben wir uns 3 verschiedene Testroboter angeschaut und deren Vor- und Nachteile verglichen. Dabei handelt es sich um folgende Testroboter:
 
 ## 1. Selenium
@@ -67,6 +71,41 @@ Zudem ist Selenium auch das einzige Framework auf Browserstack, welches auch in 
 
 Beim Thema Browsersupport ist Selenium auch klar der Gewinner. Es unterstützt alle gängigen Browser wie Chrome, Firefox, Safari, Edge und zusätzlich auch etwas ältere/unbeliebtere Browser wie IE und Opera.
 
+
+<table>
+  <tr>
+   <td>Kriterium
+   </td>
+   <td>Bewertung
+   </td>
+  </tr>
+  <tr>
+   <td>Device Support
+   </td>
+   <td>☆☆☆☆☆
+   </td>
+  </tr>
+  <tr>
+   <td>Ressourcen|Dokumentation
+   </td>
+   <td>☆☆☆☆☆
+   </td>
+  </tr>
+  <tr>
+   <td>Lernkurve
+   </td>
+   <td>☆☆☆☆ (Sehr einfach zu lernen allerdings werden gewisse Funktionen komplizierter gelöst als bei alternativen Frameworks)
+   </td>
+  </tr>
+  <tr>
+   <td>Setup
+   </td>
+   <td>☆☆☆☆ (Webdriver sind nicht im Source code enthalten - was durchaus vorteile haben kann - allerdings verkompliziert das das Setup)
+   </td>
+  </tr>
+</table>
+
+
 ## Playwright
 Playwright funktioniert grundsätzlich sehr ähnlich wie Selenium. 
 Ein sehr cooles Feature an Playwright ist, dass es keine externen Webdriver benötigt und ebenfalls auch headless funktioniert. Dieses Feature war zwar bei unserem Projekt nicht relevant, allerdings kann es vor allem in CI/CD Pipelines sehr nützlich sein.
@@ -83,6 +122,41 @@ WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "myDynami
 # Playwright
 page.goto('https://stundenplan.bbzbl-it.de/', wait_until='domcontentloaded') # Wait until page is loaded
 ```
+
+
+<table>
+  <tr>
+   <td>Kriterium
+   </td>
+   <td>Bewertung
+   </td>
+  </tr>
+  <tr>
+   <td>Device Support
+   </td>
+   <td>☆☆☆ (Keine Mobile Devices, nur neuere Betriebssysteme)
+   </td>
+  </tr>
+  <tr>
+   <td>Ressourcen|Dokumentation
+   </td>
+   <td>☆☆☆☆ (Community ist deutlich kleiner als die von Selenium)
+   </td>
+  </tr>
+  <tr>
+   <td>Lernkurve
+   </td>
+   <td>☆☆☆☆(Anfänglich etwas schwer allerdings sehr einfach zu lernen)
+   </td>
+  </tr>
+  <tr>
+   <td>Setup
+   </td>
+   <td>☆☆☆☆☆
+   </td>
+  </tr>
+</table>
+
 
 ## Puppeteer
 Puppeteer ist ein JS Framework. Dadurch hat es natürlich den Vorteil, dass es sehr einfach in JS Projekte integriert werden kann. 
@@ -121,6 +195,40 @@ async function run() {
   }
 }
 ```
+
+<table>
+  <tr>
+   <td>Kriterium
+   </td>
+   <td>Bewertung
+   </td>
+  </tr>
+  <tr>
+   <td>Device Support
+   </td>
+   <td>☆☆☆ (Ausreichender Betriebsystem Support allerdings kein Safari)
+   </td>
+  </tr>
+  <tr>
+   <td>Ressourcen|Dokumentation
+   </td>
+   <td>☆☆☆☆
+   </td>
+  </tr>
+  <tr>
+   <td>Lernkurve
+   </td>
+   <td>☆☆☆☆☆
+   </td>
+  </tr>
+  <tr>
+   <td>Setup
+   </td>
+   <td>☆☆☆☆☆
+   </td>
+  </tr>
+</table>
+
 
 # Fazit
 
