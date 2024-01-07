@@ -1,5 +1,22 @@
 # M450-lb3
 
+- [M450-lb3](#m450-lb3)
+- [Einführung](#einführung)
+- [Programmcode](#programmcode)
+  - [1. Selenium](#1-selenium)
+  - [2. Playwright](#2-playwright)
+  - [3. Puppeteer](#3-puppeteer)
+- [Browserstack](#browserstack)
+  - [Vorteile durch Browserstack](#vorteile-durch-browserstack)
+  - [Nachteile durch Browserstack](#nachteile-durch-browserstack)
+- [Testen der Applikation](#testen-der-applikation)
+- [Vergleich der Testroboter](#vergleich-der-testroboter)
+  - [Selenium](#selenium)
+  - [Playwright](#playwright)
+  - [Puppeteer](#puppeteer)
+- [Fazit](#fazit)
+
+
 # Einführung
 
 Testroboter haben die Aufgabe die Qualität von Software zu überprüfen. Testroboter folgen einer vorgegebenen Liste von Tests. Dabei führen sie bestimmte Aktionen aus (z.B klicken auf einen Button) und überprüfen anschliessend das Ergebnis. 
