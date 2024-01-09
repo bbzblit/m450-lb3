@@ -2,7 +2,7 @@
 
 - [M450-lb3](#m450-lb3)
 - [1 Einleitung](#1-einleitung)
-- [Programmcode](#programmcode)
+- [2 Programmcode](#2-programmcode)
 - [3 Tool Auswahl](#3-tool-auswahl)
   - [3.1 Selenium](#31-selenium)
   - [3.2 Playwright](#32-playwright)
@@ -11,7 +11,6 @@
     - [Vorteile durch Browserstack](#vorteile-durch-browserstack)
     - [Nachteile durch Browserstack](#nachteile-durch-browserstack)
 - [4. Testen unserer Applikation](#4-testen-unserer-applikation)
-- [Vergleich der Testroboter](#vergleich-der-testroboter)
   - [4.1 Selenium](#41-selenium)
   - [4.2 Playwright](#42-playwright)
   - [4.3 Puppeteer](#43-puppeteer)
@@ -30,7 +29,7 @@ Wir haben uns für dieses Thema entschieden, weil wir automatisierte Tests und T
 spannend finden. Ausserdem hatten war schon ein wenig Erfahrung mit Selenium
 vorhanden.
 
-# Programmcode
+# 2 Programmcode
 Als Grundlage haben wir uns dazu entschieden, unseren [Stundenplan](https://stundenplan.bbzbl-it.dev) zu verwenden. Dabei
 handelt es sich um eine verbesserte Implementierung des offiziellen [BBZBL Stundenplan](https://bbzbl.ch/stundenplan).
 
@@ -113,7 +112,6 @@ Resultate sind unter den folgenden Links zu finden:
 2. [Selenium](https://automate.browserstack.com/dashboard/v2/public-build/eXJ6cnBPOW0xTEhlbXlxVk5UT1N6TUcxVkdDaHpvS1h4b3BhaEpRMllwdG0rWVgyVzgwR3dMWVFRUVRIczZqQk1yUlgyMDhteWFqZWN1NEYzVFc4M1E9PS0tUzg0OWc2bnNhcG96aDVWbVRKWlk0UT09--033a4376aafe3e2d910f77fa9fdc7bf1cc5ad26f)
 3. [Puppeteer](https://automate.browserstack.com/dashboard/v2/public-build/dlByUCsxM3dSZlRzVm9RbEgwU3JENGRUcFZ3am9ZWFk0VUY3WGcvLzdTNlVQRGcyOTI3Qi9OOTJWaEplUUNpTTYxM0U3b05PZmVQbkRWSGprZGVaQmc9PS0tSUVPbElhRFlPR1B4M29VY1Qwakg5QT09--d314b5b443baf203073c6c7cd4d2a7edb744039c)
 
-# Vergleich der Testroboter
 
 ## 4.1 Selenium
 Selenium war bei den Tests unser persönlicher Favorit. Es ist sehr einfach zu verwenden,
